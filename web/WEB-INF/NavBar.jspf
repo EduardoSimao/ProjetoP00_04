@@ -1,0 +1,31 @@
+<%-- any content can be specified here e.g.: --%>
+
+<%@ page pageEncoding="UTF-8" %>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container">
+    <a class="navbar-brand" href="#"><h1>Grupo5</h1></a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+    </ul>
+     <%        
+        if(session.getValue("usuario") != null || session.getValue("senha") != null){%>
+        <form class="form-inline my-2 my-lg-0" action="../logout.jsp">
+            <h6 style="color: white"><% out.println("Bem vindo, " + session.getValue("usuario")); %>  </h6> &nbsp &nbsp
+            <button class="btn btn-outline-success" type="submit">Sair</button> 
+        </form>
+        <%} else {%>
+        <form class="form-inline my-2 my-lg-0" action="../login.jsp">
+            <input class="form-control mr-sm-2" type="text" placeholder="Usuário" name="user">
+            <input class="form-control mr-sm-2" type="password" placeholder="Senha" name="password">
+            <button class="btn btn-outline-success" type="submit" name='entar'>Entrar</button> &nbsp
+        </form>
+    
+        <a href="#"><button class="btn btn-outline-success" type="button">Cadastre-se</button></a>
+        <%}
+    %>
+    
+  </div>
+</nav>
+
