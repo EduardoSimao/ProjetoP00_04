@@ -1,0 +1,48 @@
+<%-- 
+    Document   : footer
+    Created on : 04/11/2018, 12:00:00
+    Author     : Arthur
+--%>
+<%@ page pageEncoding="UTF-8" %>
+<footer class="bg-dark py-3">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center text-white pb-2">
+                <p class="h3 text-center">Equipe GitHub</p>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+              Perfis GitHub
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title " id="exampleModalCenterTitle">
+                        <a class="color-modal" href="https://github.com/EduardoSimao/ProjetoP00_04" target="_blank">Repositório do Projeto</a>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="h5">
+
+                        <a href="https://github.com/EduardoSimao" target="_blank">Eduardo Simao</a> <br>
+                        <a href="https://github.com/delamano" target="_blank">Arthur de la Mano</a>  <br>
+                        <a href="https://github.com/" target="_blank">c</a>  <br>
+                        <a href="https://github.com/" target="_blank">d</a>  <br>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
