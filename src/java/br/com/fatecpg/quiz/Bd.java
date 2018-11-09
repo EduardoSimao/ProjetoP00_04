@@ -18,4 +18,18 @@ public class Bd {
        
        return user;
    }
+   public static ArrayList<Question> getBioTest() {
+       ArrayList<Question> test = new ArrayList<>();
+       test.add(new Question("Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
+       test.add(new Question("Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
+       test.add(new Question("Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
+       test.add(new Question("Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
+       test.add(new Question("Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
+       test.add(new Question("Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
+       test.add(new Question("Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
+       test.add(new Question("Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
+       test.add(new Question("Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
+       test.add(new Question("Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
+       return test;
+   }
 }
