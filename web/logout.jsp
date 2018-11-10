@@ -1,19 +1,13 @@
 <%-- 
     Document   : logout
-    Created on : 03/11/2018, 14:12:07
-    Author     : Positivo
+    Created on : 05/11/2018, 15:53:02
+    Author     : mateus
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-    </head>
-    <body>            
-        <%
-        //Destroi as sessions
-        session.invalidate();
-        out.println("Você saiu com sucesso do sistema. <script>document.location.href='Home.jsp';</script>");
-        %>
-    </body>
-</html>
+<%
+    
+    session.invalidate();
+    response.sendRedirect("home.jsp");
+    
+%>
