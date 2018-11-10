@@ -33,7 +33,7 @@
                     sum++;
                 }
             }
-            double grade = 100 * (((double) (sum)) / ((double) (Bd.getBioTest().size())));
+            double grade = 100 * (((double) (sum)) / ((double) (10)));
             if (grade >= 60) {
                 color = "green";
             } else {
@@ -54,11 +54,10 @@
         </div>
 
         <%}%>
-        <h2>Test</h2>
 
         <div class="row">
             <div class="d-flex mx-auto">           
-                <div class="jumbotron">
+                <div class="jumbotron m-5">
                     <form>
                         <% int n = 0;
                             for (Question q : Bd.getBioTest()) {
