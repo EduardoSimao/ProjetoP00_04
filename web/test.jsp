@@ -62,7 +62,10 @@
                     <form>
                         <% int n = 0;
                             for (Question q : Bd.getBioTest()) {
-                                n++;%>
+                                n++;
+                                if (n > 10) {
+                                    break;
+                                }%>
                         <div class="form-group">
 
                             <h4><%=n%>.)<%=q.getTitle()%></h4>
