@@ -1,0 +1,12 @@
+<%-- 
+    Document   : logged
+    Created on : 05/11/2018, 16:22:49
+    Author     : mateus
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%
+
+String logged = (String) session.getAttribute("user");
+
+%>

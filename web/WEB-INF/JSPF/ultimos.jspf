@@ -1,0 +1,34 @@
+<%-- any content can be specified here e.g.: --%>
+
+<%@page import="br.com.fatecpg.quiz.Usuario"%>
+<%@page import="br.com.fatecpg.quiz.Historico"%>
+<%@page import="br.com.fatecpg.quiz.Bd"%>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.text.DateFormat"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<h2  class="text-center py-4">Últimos Testes</h2>
+<table class="table mt-2">
+    <thead class="bg-dark text-white">
+        <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Nota</th>
+            <th>Data</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%
+            DateFormat df1 = new SimpleDateFormat("dd/MM/yyyy - HH:mm");
+            int uq = 0;
+            for (Historico h : Historico.sortByDate(Bd.getHistoric())) {
+                if (uq <= 9) {
+        %>
+        <tr>
+            <td><b><%= uq + 1%></b></td>
+            <td><%= h.getUser()%></td>
+            <td><%= h.getResult()%></td>
+            <td><%= df1.format(h.getDate())%></td>
+        </tr>
+        <% uq++;}}%>
+    </tbody>
+</table>

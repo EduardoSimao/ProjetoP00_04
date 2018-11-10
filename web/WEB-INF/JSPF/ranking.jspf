@@ -1,0 +1,44 @@
+<%-- 
+    Document   : ranking
+    Created on : 09/11/2018, 23:35:37
+    Author     : mateus
+--%>
+
+<%@page import="br.com.fatecpg.quiz.Usuario"%>
+<%@page import="br.com.fatecpg.quiz.Historico"%>
+<%@page import="br.com.fatecpg.quiz.Bd"%>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.text.DateFormat"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<h2  class="text-center py-4">Ranking Geral</h2>
+<table class="table mt-2">
+    <thead class="bg-dark text-white">
+        <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Nota</th>
+            <th>Data</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%
+            DateFormat df = new SimpleDateFormat("dd/MM/yyyy - HH:mm");
+            int rankCount = 0;
+            for (Historico h : Historico.sortByResult(Bd.getHistoric())) {
+                if (rankCount <= 9) {
+        %>
+        <tr>
+            <td><b><%= rankCount + 1%></b></td>
+            <td><%= h.getUser()%></td>
+            <td><%= h.getResult()%></td>
+            <td><%= df.format(h.getDate())%></td>
+        </tr>
+        <%
+            }
+            rankCount++;
+        %>
+
+        <% }%>
+    </tbody>
+
+</table>
