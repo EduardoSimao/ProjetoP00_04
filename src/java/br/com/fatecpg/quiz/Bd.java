@@ -6,6 +6,8 @@
 package br.com.fatecpg.quiz;
 
 import java.util.ArrayList;
+import java.util.Collections;
+
 
 /**
  *
@@ -35,6 +37,7 @@ public class Bd {
        test.add(new Question("8Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
        test.add(new Question("9Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
        test.add(new Question("0Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
+       Collections.shuffle(test);
        return test;
    }
 }
