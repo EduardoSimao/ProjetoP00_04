@@ -1,44 +1,33 @@
+package br.com.fatecpg.quiz;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.fatecpg.quiz;
 
 /**
  *
- * @author Positivo
+ * @author mateus
  */
 public class Usuario {
-    String nome;
-    String senha;
+    
+    private String name;
 
-    public Usuario(String nome, String senha) {
-        this.nome = nome;
-        this.senha = senha;
-    }
-     public Usuario() {
-        nome = senha = "";
-    }
-    
-    
-    public String getNome() {
-        return nome;
+    public Usuario(String name) {
+        this.setUsuario(name);
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public String getName() {
+        return name;
     }
 
-    public String getSenha() {
-        return senha;
+    public void setName(String name) {
+        this.name = name;
     }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
+    
+    public void setUsuario(String name) {
+        this.name = name;
     }
-   
-    
-    
     
 }
