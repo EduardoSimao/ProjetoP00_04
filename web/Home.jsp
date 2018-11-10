@@ -3,7 +3,8 @@
     Created on : 02/11/2018, 16:58:22
     Author     : EduardoSimão
 --%>
-
+<%@page import="br.com.fatecpg.quiz.Bd"%>
+<%@page import="br.com.fatecpg.quiz.Usuario"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
