@@ -25,16 +25,16 @@ public class Bd {
     
    public static ArrayList<Question> getBioTest() {
        ArrayList<Question> test = new ArrayList<>();
-       test.add(new Question("Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
-       test.add(new Question("Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
-       test.add(new Question("Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
-       test.add(new Question("Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
-       test.add(new Question("Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
-       test.add(new Question("Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
-       test.add(new Question("Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
-       test.add(new Question("Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
-       test.add(new Question("Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
-       test.add(new Question("Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
+       test.add(new Question("1Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
+       test.add(new Question("2Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
+       test.add(new Question("3Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
+       test.add(new Question("4Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
+       test.add(new Question("5Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
+       test.add(new Question("6Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
+       test.add(new Question("7Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
+       test.add(new Question("8Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
+       test.add(new Question("9Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
+       test.add(new Question("0Qual desses é um mámifero?","Ornitorrinco", new String[]{"Tubarão Branco","Ornitorrinco","Pato"}));
        return test;
    }
 }
