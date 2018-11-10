@@ -10,8 +10,9 @@
             </li>
             <%
                 if (session.getValue("usuario") != null || session.getValue("senha") != null) {%>
-                <a class="nav-link" href="./test.jsp">Teste</a>
-            <a class="nav-link" href="./">Perfil</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../test.jsp">Teste</a>
+                    </li>
             <%}%>
         </ul>
         <%

@@ -3,6 +3,7 @@
     Created on : 02/11/2018, 16:58:22
     Author     : EduardoSimão
 --%>
+<%@page import="javax.swing.JOptionPane"%>
 <%@page import="br.com.fatecpg.quiz.Bd"%>
 <%@page import="br.com.fatecpg.quiz.Usuario"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -40,10 +41,16 @@
                     1</br>
                 </div>
                 <div class="mx-auto mb-2">
-                    <a href="./test.jsp" class="btn btn-success">Realizar Teste</a>
-                </div>
+                    <% if (session.getValue("usuario") != null || session.getValue("senha") != null) {%>
+                    <a href="test.jsp"><button type="submit" class="btn btn-success">Realizar Test</button></a>
+                    <%} else{%>
+                    <button type="submit" class="btn btn-success" disabled title="Faça login para realizar o teste">Realizar Test</button>
+                    <%}%> 
+                    
+                </div>  
             </div>
         </div>
+         <%@include file="WEB-INF/footer.jspf" %>
     </body>
-    <%@include file="WEB-INF/footer.jspf" %>
+    
 </html>

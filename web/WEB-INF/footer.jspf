@@ -4,9 +4,23 @@
     Author     : Arthur
 --%>
 <%@ page pageEncoding="UTF-8" %>
-<footer class="bg-dark py-3">
-    <div class="container">
+<style>
+    .cor {
+       color: white;
+    }
+    .footer{
+        position: relative;
+        bottom: 0px;
+        height: 150px;
+        width: 100%;
+    }   
+</style>
+<div id="clear"></div>
+<footer >
+    <div>
         <div class="row justify-content-center">
+            <div id="copyright" class="footer footer-copyright text-center py-3 bg-dark">
+      
             <div class="col-12 text-center text-white pb-2">
                 <p class="h3 text-center">Equipe GitHub</p>
             </div>
@@ -14,7 +28,9 @@
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
               Perfis GitHub
             </button>
-
+            
+                <p class="cor">&copy; Untitled. All rights reserved. | Grupo 1 | Praia Grande 2018</p>
+            </div>
             <!-- Modal -->
             <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
@@ -29,11 +45,10 @@
                   </div>
                   <div class="modal-body">
                     <div class="h5">
-
-                        <a href="https://github.com/EduardoSimao" target="_blank">Eduardo Simao</a> <br>
                         <a href="https://github.com/delamano" target="_blank">Arthur de la Mano</a>  <br>
-                        <a href="https://github.com/lolorenzetti" target="_blank">c</a>Renan Lorenzetti<br>
-                        <a href="https://github.com/" target="_blank">d</a>  <br>
+                        <a href="https://github.com/EduardoSimao" target="_blank">Eduardo Simão</a> <br>
+                        <a href="https://github.com/guigso" target="_blank">Guilherme Oliveira</a> <br>
+                        <a href="https://github.com/lolorenzetti" target="_blank">Renan Lorenzetti</a> <br>
                     </div>
                   </div>
                   <div class="modal-footer">
